@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #ded5c4;
+}
+
+
+/* Navigation bar styling */
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #ebd5d5;
+    color: black;
+    top: 0;
+    height: 80px;
+}
+
+nav h1 {
+    font-size: 20px;
+}
+
+nav .bar-elements {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav .bar-elements p {
+    font-size: 17px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+nav .bar-elements p:hover {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+nav input {
+    margin: 8px 20px;
+    padding: 15px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: #f2f2f2;
+}
+
+
+/* End of Navigation bar styling */
+
+
+/* Header styling */
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #c4c1e0;
+    position: static;
+    height: 200px;
+}
+
+header h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+header button {
+    padding: 15px 20px;
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: beige;
+}
+
+header button a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* End of header styline */
+
+
+/* Main section styling */
+
+.collections .collection img {
+    width: 350px;
+    cursor: pointer;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+.main-section {
+    margin: 20px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* all collections styling */
+
+.collections {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.collections .collection {
+    margin-right: 20px;
+}
+
+.collections .collection img:hover {
+    width: 400px;
+}
+
+.collections .collection .collection-info {
+    display: flex;
+    flex: wrap;
+    justify-content: space-between;
+}
+
+.collections .collection .collection-info h4 {
+    color: black;
+    padding-top: 0;
+    font-size: 17px;
+}
+
+.collection-article p {
+    font-size: 12px;
+    margin-top: -10px;
+    color: black;
+}
+
+
+/* End of collections styling */
+
+
+/* Video styling */
+
+.main-section .video {
+    margin-top: 80px;
+    width: 50%;
+}
+
+.main-section .video iframe {
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: 100%;
+    height: 500px;
+}
+
+
+/* End of main section styling*/
+
+
+/* Footer styling */
+
+footer {
+    background-color: black;
+    color: white;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+footer p {
+    color: white;
+}
+
+footer .social-media {
+    display: flex;
+}
+
+footer .social-media i {
+    margin-right: 15px;
+    text-align: center;
+}
+
+
+/* End of footer styling */
+
+
+/* Responsive design using media queries */
+
+@media screen and (max-width:640px) {
+    nav .bar-elements .Links,
+    nav.h1 {
+        display: none;
+    }
+    .collections .collection img {
+        width: 300px;
+    }
+}
