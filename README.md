@@ -1,0 +1,1 @@
+# beautiful-Jewelry-Frontend-demo-of-an-E-commerce-app
